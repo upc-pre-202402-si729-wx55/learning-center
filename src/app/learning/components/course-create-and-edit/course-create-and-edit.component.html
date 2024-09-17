@@ -1,0 +1,16 @@
+<!-- Create and Edit Course -->
+<h2> {{ isEditMode() ? 'Edit Course': 'New Course' }}</h2>
+<div class="form-section">
+  <form #courseForm="ngForm" (submit)="onSubmit()" class="form-row">
+    <mat-form-field id="title-form-field">
+      <input [(ngModel)]="course.title" matInput name="title" placeholder="Title" required>
+    </mat-form-field>
+    <mat-form-field id="description-form-field">
+      <input [(ngModel)]="course.description" matInput name="description" placeholder="Description" required>
+    </mat-form-field>
+    <ng-container>
+      <button color="primary" mat-raised-button>{{ isEditMode() ? 'Update' : 'Add'}}</button>
+      <button (click)="onCancel()" color="warn" mat-raised-button>Cancel</button>
+    </ng-container>
+  </form>
+</div>
