@@ -14,3 +14,10 @@
 .form-row .mat-form-field {
   margin-right: 8px;
 }
+
+.short-text-field {
+  min-width: 250px;
+}
+.long-text-field {
+  min-width: 600px;
+}
