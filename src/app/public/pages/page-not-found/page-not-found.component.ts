@@ -14,7 +14,7 @@ import {MatButton} from "@angular/material/button";
 export class PageNotFoundComponent implements OnInit {
   //#region Attributes
 
-  protected invalidUrl: string;
+  protected invalidPath: string;
   private route: ActivatedRoute = inject(ActivatedRoute);
   private router: Router = inject(Router);
 
@@ -23,11 +23,11 @@ export class PageNotFoundComponent implements OnInit {
   //#region Methods
 
   constructor() {
-    this.invalidUrl = '';
+    this.invalidPath = '';
   }
 
   ngOnInit(): void {
-    this.invalidUrl = this.route.snapshot.url[0].path;
+    this.invalidPath = this.route.snapshot.url.map(url => url.path).join('/');
   }
 
   protected onNavigateHome() {
