@@ -1,4 +1,16 @@
 {
   "students": [],
-  "profiles": []
+  "profiles": [],
+  "courses": [
+    {
+      "id": 1,
+      "title": "Angular Fundamentals",
+      "description": "Learn the basics of Angular"
+    },
+    {
+      "id": 2,
+      "title": "Spring Boot Basics",
+      "description": "Spring Boot Basics"
+    }
+  ]
 }
