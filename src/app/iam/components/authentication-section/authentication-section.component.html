@@ -1,0 +1,5 @@
+@if (isSignedIn) {
+  <span style="font-size: small"> Welcome, {{ currentUsername }}</span> | <button mat-button (click)="onSignOut()">Sign Out</button>
+} @else {
+    <button mat-button (click)="onSignIn()">Sign In</button> | <button mat-button (click)="onSignUp()">Sign Up</button>
+}
