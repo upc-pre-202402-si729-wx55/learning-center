@@ -4,8 +4,8 @@ import {AuthenticationService} from "../../services/authentication.service";
 import {BaseFormComponent} from "../../../shared/components/base-form.component";
 import {SignUpRequest} from "../../model/sign-up.request";
 import {MatButton} from "@angular/material/button";
-import {MatCard, MatCardContent, MatCardHeader} from "@angular/material/card";
-import {MatFormField} from "@angular/material/form-field";
+import {MatCard, MatCardContent, MatCardHeader, MatCardTitle} from "@angular/material/card";
+import {MatError, MatFormField} from "@angular/material/form-field";
 import {MatInput} from "@angular/material/input";
 
 /**
@@ -19,6 +19,8 @@ import {MatInput} from "@angular/material/input";
     MatButton,
     MatCard,
     MatCardContent,
+    MatCardTitle,
+    MatError,
     MatCardHeader,
     MatFormField,
     MatInput,

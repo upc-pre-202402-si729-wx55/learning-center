@@ -3,8 +3,8 @@ import {BaseFormComponent} from "../../../shared/components/base-form.component"
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
 import {AuthenticationService} from "../../services/authentication.service";
 import {SignInRequest} from "../../model/sign-in.request";
-import {MatCard, MatCardContent, MatCardHeader} from "@angular/material/card";
-import {MatFormField} from "@angular/material/form-field";
+import {MatCard, MatCardContent, MatCardHeader, MatCardTitle} from "@angular/material/card";
+import {MatError, MatFormField} from "@angular/material/form-field";
 import {MatInput} from "@angular/material/input";
 import {MatButton} from "@angular/material/button";
 
@@ -18,6 +18,8 @@ import {MatButton} from "@angular/material/button";
     MatCard,
     MatCardHeader,
     MatCardContent,
+    MatCardTitle,
+    MatError,
     MatFormField,
     ReactiveFormsModule,
     MatInput,
