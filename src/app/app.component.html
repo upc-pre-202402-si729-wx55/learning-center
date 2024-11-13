@@ -4,6 +4,7 @@
   @for (option of options; track option.title) {
     <a mat-button [routerLink]="option.path">{{ option.title }}</a>
   }
+  | <app-authentication-section/>
   <app-language-switcher/>
 </mat-toolbar>
 <router-outlet/>
